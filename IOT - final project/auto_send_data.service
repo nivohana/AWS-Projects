@@ -1,0 +1,13 @@
+[Unit]
+ Description=IoT final project
+ After=multi-user.target
+ 
+[Service]
+Type=simple
+User=pi
+ExecStart=/usr/bin/python3 /home/pi/sensors_IDC_Shadow_final.py
+Restart=on-abort
+ 
+[Install]
+WantedBy=multi-user.target
+
